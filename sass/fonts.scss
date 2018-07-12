@@ -1,0 +1,42 @@
+$font-path: "../fonts" !default;
+
+@font-face{
+  font-family: 'MyriadPro-Regular';
+  src: url('#{$font-path}/MyriadPro-Regular.otf');
+}
+
+@font-face{
+  font-family: 'MyriadPro-Bold';
+  src: url('#{$font-path}/MyriadPro-Bold.otf');
+}
+
+@font-face{
+  font-family: 'myriadpro-light';
+  src: url('#{$font-path}/myriadpro-light.otf');
+}
+
+@font-face{
+  font-family: 'MyriadPro-SemiboldIt';
+  src: url('#{$font-path}/MyriadPro-SemiboldIt.otf');
+}
+
+@font-face{
+  font-family: 'HelveticaNeueLTPro-Lt';
+  src: url('#{$font-path}/HelveticaNeueLTPro-Lt.otf');
+}
+
+
+@font-face{
+  font-family: 'HelveticaNeueLTPro-LtIt';
+  src: url('#{$font-path}/HelveticaNeueLTPro-LtIt.otf');
+}
+
+@font-face{
+  font-family: 'HelveticaNeueLTPro-CnO';
+  src: url('#{$font-path}/HelveticaNeueLTPro-Cn.otf');
+}
+
+@font-face{
+  font-family: 'HelveticaNeueLTPro-Cn';
+  src: url('#{$font-path}/HelveticaNeueLTPro-Cn.otf');
+}

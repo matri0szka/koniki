@@ -1,0 +1,1101 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "fonts";
+
+$orange:#ED7A33;
+$orange-lighter:#F48120;
+$gray:#B2B2B2;
+$white: #FFFFFF;
+
+body {
+    // background-image: url("../img/badanie.jpg");
+    @include media-breakpoint-up(md) { 
+        background-image: url("../img/dist.jpg");
+        background-size: 80%;
+    }    
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 82%;
+    height: 7000px;
+    font-family: MyriadPro-Regular;
+    overflow-x: hidden!important;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+.bold {
+    font-family: MyriadPro-Bold;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $orange-lighter; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $orange-lighter; 
+}
+
+.container {
+    margin: auto;
+    padding: 0;
+}
+
+// .container {
+//     border:1px solid red;
+// }
+
+// .row {
+//     border: 1px solid green;
+// }
+
+
+a, a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $orange-lighter;
+    text-decoration: none;
+}
+
+.orange-line {
+    border: 1.5px solid $orange-lighter;
+    margin-top: 1.4vw;
+}
+
+.orange-text {
+    font-family: MyriadPro-Bold;
+    color: #F48120;
+    font-size: 3.5vw;
+    line-height: 3.7vw;
+}
+.orange-title {
+    font-size: 6.8vw;
+    color: $orange-lighter;
+    font-family: MyriadPro-Bold;
+}
+
+.header-orange-bg { 
+    color: white;
+    background-color: #F48120;
+    padding: 0.6vw 1vw 0.6vw 1.7vw;
+    border-bottom-right-radius: 3vw;
+    font-family: MyriadPro-Bold;
+    font-size: 6vw;
+}
+
+.main-text {
+    font-family: myriadpro-light;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+    text-align: justify;
+}
+
+.news-details {
+    font-size: 1vw;
+    margin: -0.6vw 0.4vw 0.4vw;
+    font-family: HelveticaNeueLTPro-LtIt;
+    color:#686868;
+} 
+.header {
+    .logo {
+        width: 16.7vw;
+        margin: 0.95vw 0.35vw;
+    }
+    .header-btns {
+        margin: 1.1vw 0;
+        padding-right: 0;
+        .facebook-icon, .shop-icon {
+            width: 2vw;
+            margin-left: 0.3vw;
+        }
+    }
+    .lang-btns {
+        span {
+            padding: 0.3vw 0.4vw;
+            position: relative;
+            top: 0.4vw;
+            margin-right: 0.3vw;
+            left: -0.2vw;
+            background-color: white;
+            color: $orange-lighter;
+        }
+        span.active {
+            color:$white;
+            background-color: $orange-lighter;
+        }
+    }
+}
+
+.navgation {
+    padding: 0;
+}
+
+.main-navbar {
+    width: 100%;
+    padding:0!important;
+    .navbar-toggler {
+        font-size: 13vw;
+        color: white;
+        border: none;
+    }
+    .main-nav {
+        width: 100%;
+    }
+    .dropdown-menu {
+        top: 80%;
+        background-color: $orange-lighter;
+        border-radius: 0;
+        color: $white;
+        font-size: 1vw;
+    }
+    .navbar-toggler {
+        margin: 2vw auto;
+    }
+    .nav-item {
+        font-size: 1.2vw;
+        padding: 0.7vw 1vw 0vw 1vw;
+        text-align: center;
+        box-sizing: border-box;
+        width: 20%;
+        line-height: 1.4vw;
+        border-top: 5px solid $gray;
+        .nav-link {
+            color:black;
+        }
+        .move-up {
+            margin-top: -0.4vw;
+        }
+    }
+    .nav-item.active{
+        border-top: 9px solid $orange-lighter;
+        color: $orange-lighter;
+        padding-top: 0.5vw!important;
+        .nav-link {
+            color:$orange-lighter;
+        }
+    }
+    .dropdown-item.active {
+        background-color: #B2B2B2;
+        color: black;
+
+    }
+}
+
+.carousel-main {
+    .carousel-indicators li {
+        height:1vw;
+        width: 1vw;
+        border-radius: 50%;
+        background-color: $gray;
+        margin-right: 7px;
+        margin-left: 6px;
+    }
+    
+    .carousel-indicators .active {
+        background-color: $orange-lighter;
+    }
+}
+
+.about-us {
+    .header-orange-bg {
+        margin: 1vw 0vw;
+    }
+    .skotan-logo {
+        margin: 1.1vw 0vw;
+        width: 16vw;
+    }
+    .orange-text {
+        margin: 1.2vw auto 2vw;
+        text-align: center;
+        padding: 2vw 4vw;
+    }
+    .main-text {
+        margin-left: 2vw;
+
+    }
+    .see-more {
+        top: 4.5vw;
+    }
+
+}
+.see-more-row {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.see-more {
+    position: relative;
+    width: 12vw;
+    img {
+        position: absolute;
+        width: 100%;
+    }
+    .see-more-text {
+        position: relative;
+        font-size: 1.4vw;
+        top: 0.6vw;
+        left: 1.4vw;
+    }
+}
+
+.see-row {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.see {
+    position: relative;
+    width: 10vw;
+    img {
+        position: absolute;
+        width: 100%;
+    }
+    .see-text {
+        position: relative;
+        font-size: 1.7vw;
+        top: 0.5vw;
+        left: 1.8vw;
+    }
+}
+
+.see-more-row {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.see-more {
+    position: relative;
+    width: 12vw;
+    img {
+        position: absolute;
+        width: 100%;
+    }
+    .see-more-text {
+        position: relative;
+        font-size: 1.4vw;
+        top: 0.6vw;
+        left: 1.4vw;
+    }
+}
+
+
+.ambassadors {
+    margin-top:8.6vw;
+    .orange-title {
+        margin-top: 2vw;
+    }
+    .ambassadors-item {
+        margin-top:3vw;
+    }
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        color:$orange-lighter;
+        margin-top: 3vw;
+        font-size: 2vw;
+        font-family: MyriadPro-SemiboldIt;
+    }
+
+    p {
+        margin-top: 2vw;
+        text-align: center;
+    }
+}
+
+.carousel-circle {
+    top:5vw;
+    .carousel-item {
+        padding: 0 16vw;
+    }
+    img {
+        width: 80%;
+    }
+    .carousel-control-next{
+        background-color: $orange-lighter;
+    }
+    .carousel-control-prev{
+        background-color: white;
+        border: 1px solid #f481205e;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        width: 17%;
+        opacity: 1;
+        height: 16vw;
+        top: 15vw;
+    }
+    .fa {
+        font-size: 10vw;
+    }
+    .fa-angle-right{
+        color: white;
+    }
+    .fa-angle-left{
+        color: $orange-lighter;
+    }
+    h2 {
+        font-size: 6vw;
+        margin-top: 8vw;
+        color:$orange-lighter;
+        font-family: MyriadPro-SemiboldIt;
+    }
+    p {
+        font-size: 3vw;
+        line-height: 4.5vw;
+        text-align: center;
+    }
+    
+}
+
+.yarrowia-lipolytica {
+    margin-top: 8.8vw;
+    padding: 0 0.5vw;
+    .header-orange-bg {
+        margin-left: -1vw;
+        width: 130%;
+
+    }
+    .yarrowia-logo {
+        position: absolute;
+        right: 5vw;
+        width: 14.5vw;
+    }
+
+    .orange-text {
+        margin-top: 1.5vw;
+        padding-right: 4.5vw;
+        margin-left: -1vw;
+    }
+    .yarrowia-img {
+        width: 104%;
+        margin-left: -2vw;
+        margin-top: 1vw;
+    }
+    .yarrowia-lipolytica-bottom {
+        .orange-text {
+            margin-top: -1vw;
+            padding: 0 3vw;
+        }
+    }
+    .see-more {
+        top: 2.2vw;
+    }
+    .main-text {
+        margin: 2vw auto 4vw;
+    }
+
+}
+
+.trusted {
+    margin-top: 8.2vw;
+    img {
+        width:70%;
+        margin-top: 3vw;
+    }
+}
+
+.news {
+    margin-top: 10vw;
+    padding: 0 8vw;
+    .header-orange-bg { 
+        width: 16vw;
+        margin: 5vw 0;
+    }
+    .news-img {
+        width: 100%;
+        margin-bottom: 1vw;
+    }
+    .news-item {
+        width: 102%;
+    }
+    .news-title {
+        font-size: 1.4vw;
+        border-bottom: 1px solid $orange-lighter;
+    }
+
+    .news-text {
+        text-align: justify;
+    }
+}
+
+.contact {
+    margin-top:6vw;
+    padding: 0 8vw;
+    font-family: HelveticaNeueLTPro-Lt;
+    .header-orange-bg{
+        width: 11vw;
+        margin-bottom: 4vw;
+
+    } 
+    h2 {
+        font-size: 2.1vw;
+    } 
+    .orange-line {
+        margin-top: 0vw;
+    }
+    button {
+        background-color: $orange-lighter;
+        border: none;
+        width: 7rem;
+        color: white;
+
+    }
+    .button:hover {
+        background-color: $orange;
+    }
+    .form-control {
+        background-color: transparent;
+        border-radius: 0;
+    }
+    .form-control:focus {
+        border-color: $orange-lighter;
+        box-shadow: 0 0 0 0.2rem  rgba(244, 127, 32, 0.18);
+    }
+    .form-check-label {
+        font-family: HelveticaNeueLTPro-LtIt;
+        color: #666666;
+    }
+
+}
+.footer {
+    color: white;
+    font-family: HelveticaNeueLTPro-Lt;
+    padding:0 4vw;
+    .copyright {
+        padding: 3.5vw 3vw 1vw;
+        color: black;
+    }
+    .footer-main {
+        background-color:black;
+        height: 20vw;
+        position: relative;
+        padding: 0 12vw;
+
+    }
+    .contact-details {
+        margin-left: 0vw;
+    }
+    .contact-detail {
+        margin: 0.7vw 0 0.3vw;
+    }
+    .footer-logo {
+        width: 10.4vw;
+        margin: 1.2vw 0 0.8vw;
+        height: 100%;
+    }
+    .contact-detail-txt {
+        margin: 0.1vw 0 0 0.6vw;
+        font-size: 1vw;
+    }
+    .detail {
+        width: 1.5vw;
+        height: 100%;
+        margin-left: -0.7vw;
+    }
+    .contact-detail-txt {
+        color: white;
+    }
+    .footer-list-2 {
+        list-style: none;
+        position: absolute;
+        left: 1vw;
+        top: 3vw;
+    }
+    .footer-map-col {
+        margin: 6.5vw -2vw 0 0;
+        flex: 0 0 14.33333%;
+        max-width: 15.33333%;
+        font-size: 0.9vw;
+    }
+    .footer-icons {
+        position: absolute;
+        top: 1.8vw;
+        right: 16vw;
+        img {
+            width: 2.5vw;
+            margin-right: 0.2vw;
+        }
+    }
+
+}
+
+
+.footer-mb {
+    font-family: HelveticaNeueLTPro-Lt;
+    .footer-mb-black {
+        color: white;
+        font-size: 3vw;
+        margin-top: 16vw;
+        background-color: black;
+        .contact-details {
+            margin-left: 32vw;
+            margin-top: 7vw;
+            padding-bottom: 4vw;
+        }
+        img {
+            width: 6.5vw;
+            height: 100%;
+            margin: 0 2vw 0vw 0;
+        }
+        .contact-detail-txt {
+            margin-top: 0vw;
+            font-size: 4vw;
+        }
+    }
+    .footer-mb-white {
+        margin-top: 5vw;
+        padding-bottom: 3vw;
+        .contact-detail-txt {
+            font-size: 3.3vw;
+            text-align: center;
+            margin: 4vw 0 0 1vw;
+        }
+        .footer-mb-logo {
+            margin-left: -5vw;
+            width: 37vw;
+            height: 100%;
+        }
+    }
+}
+
+.main-news {
+    margin-top: 3.4vw;
+    .orange-line {
+        margin-top: 2.4vw;
+    }
+    .main-news-content {
+        margin-left: 1vw;
+        .news-title {
+            color: $orange-lighter;
+            font-size: 2.2vw;
+            font-family:MyriadPro-Bold;
+            margin-top: 0.5vw;
+        }
+        .see-more {
+            top: 0.5vw;
+            left: 1vw;
+        }
+    }
+}
+
+.news-subtitle {
+    font-family:MyriadPro-Bold;
+    font-size: 1.1vw;
+    line-height: 1.3vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.main-news-photo {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+    .photo-desc {
+        top: 100%;
+        width: 100%;
+        transition: all .3s ease-out;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #000000ba;
+        color: white;
+        p {
+            padding: 0.7vw 1.2vw 0;
+            font-family: myriadpro-light;
+            font-size:105%;
+        }
+    }
+}
+.main-news-photo:hover {
+    .photo-desc {
+        top: 85%;
+    }        
+}
+
+.orange-thin-line {
+    border: 0.8px solid #F48120;
+    margin:-0.3vw 0 0 0;
+}
+
+.other-news {
+    margin-top: 3.4vw;
+    .news-row {
+        margin-bottom: 5vw;
+        .single-news {
+            position: relative;
+            .news-img {
+                width: 100%;
+                border: none;
+                -webkit-transition: 0.6s ease;
+                transition: 0.6s ease;
+            }
+            .news-title {
+                margin-top: 0.6vw;
+                font-size: 1.6vw;
+            }
+            .news-details {
+                font-size: 0.8vw;
+                margin-top: 0.2vw;
+            }
+            .see-more {
+                position: absolute;
+                width: 12vw;
+                margin-right: 0vw;
+                right: 0;
+                img {
+                    position: absolute;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .next-news-arrow {
+        position: absolute;
+        width: 2vw;
+        left: 0;
+        color: gray;
+        .active {
+            color: black;
+        }
+    }
+    .pagination {
+        margin-top:10vw;
+    }
+    .prev-news-arrow {
+        position: absolute;
+        width: 2vw;
+        right: 0;
+        color: gray;
+        .active {
+            color: black;
+        }
+    }
+    .page-no {
+        font-size: 1.8vw;
+        padding: 0 0.7vw;
+        color: gray;
+    }
+    .active {
+        color: black!important; 
+     }
+    
+    
+}
+
+.news-img-box {
+    position: relative;
+    overflow: hidden;
+}
+.photo-hover {
+    background-color: #00000096;
+    border: 2px solid #F48120;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    .photo-hover-icon {
+        position:absolute;
+        left:50%;
+        margin-left:-8.5%;
+        top:50%;
+        margin-top:-11%;
+        width:17%;
+        height:22%;
+    }
+}
+.news-img-box:hover .photo-hover{
+    display: block;
+}
+.news-img-box:hover .news-img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);;
+}
+
+
+.mbr-gallery {
+    .mbr-gallery-item {
+        width: 33.33333%;
+        padding: 0;
+    }
+    .orange-title {
+        font-size: 2vw;
+        margin: 2vw auto;
+        font-family: MyriadPro-SemiboldIt;
+    }
+    .mbr-gallery-item:nth-child(3) {
+        padding-left: 1.2vw;
+    }
+    .mbr-gallery-item:nth-child(2) {
+        padding: 0 0.6vw;
+    }    
+    .mbr-gallery-item:nth-child(1) {
+        padding-right: 1.2vw;
+    } 
+}
+
+
+.full-news {
+    margin-top: 4vw;
+    .main-news-photo {
+        margin: 2vw  0 2vw 3vw;
+    }
+    .orange-thin-line {
+        width: 28vw;
+    }
+    .orange-title {
+        font-size: 2.3vw;
+        margin: 1vw auto;
+    }
+    .other-news {
+        .orange-title {
+            margin-bottom: 2vw;
+            font-size: 2.8vw;
+        }
+    }
+    .main-news-photo:hover {
+        .photo-desc {
+            top: 80%;
+        }        
+    }
+}
+
+.effectiveness {
+    .banner {
+        margin-top: 2vw;
+        margin-bottom: 1.9vw;
+    }
+    .header-orange-bg {
+        font-size: 2vw;
+        max-width: 93%;
+    }
+    .orange-text {
+        font-size: 1.6vw;
+        margin-top: 1vw;
+    }
+    .effectiveness-text {
+        margin: 2.5vw 1vw 0 0vw;
+        .exclamation {
+            margin-top: 4.3vw;
+            max-width: 85%;
+        }
+    }
+}
+
+.exclamation {
+    .exclamation-mark {
+        color: white;
+        background-color: #F48120;
+        padding: 0.2vw 2vw 0.4vw 2vw;
+        margin-right: 2vw;
+        border-bottom-left-radius: 2vw;
+        font-family: MyriadPro-Bold;
+        font-size: 2.5vw;
+        max-width: 5vw;
+        float: left;
+    }
+}
+.orange-italic {
+    font-family: MyriadPro-SemiboldIt;
+    color: #F48120;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+    margin-top: 1vw;
+    padding-top: 0.5vw;
+}
+.effectiveness_2 {
+    margin-top: 3vw;
+    .see {
+        margin: 4.5vw 0 0 -6vw;
+    }
+
+    .results-see {
+        margin-left: 1.5vw;
+    }
+}
+
+.effectiveness_3 {
+    margin-top: 5.5vw;
+    .see {
+        margin: 5vw 0 0 -6vw;
+    }
+    ul {
+        margin-top: 0.7vw;
+        line-height: 2vw;
+    }
+    .exclamation .orange-italic {
+        padding-top: 0vw;
+    }
+}
+
+.effects {
+    .header-orange-bg {
+        margin-top: 3vw;
+    }
+    .orange-italic {
+        font-size: 2vw;
+        text-align: center;
+        margin: 2vw auto;
+    }
+    .orange-text {
+        font-size: 2vw;
+        margin: 4vw 0 2vw;
+    }
+    .effect-text {
+        font-size: 0.9vw;
+    }
+    ul {
+        margin-top: 1.3vw;
+        line-height: 1.4vw;
+        li {
+            padding: 0.1vw 0;
+        }
+    }
+}
+
+.black-italic {
+    font-family: MyriadPro-SemiboldIt;
+    color: black;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+
+.effects-photos {
+    .effect-box {
+        border: 2px solid $orange-lighter;
+        background-color: $orange-lighter;
+        overflow: hidden;
+        display: block;
+        color:white;
+        position: relative;
+        padding: 0;
+        margin: 1%;
+        min-height: 28vw;
+        &-shorter {
+            min-height: 20vw;
+        }
+        img {
+            position: absolute;
+            width: 100%;
+            height: 40%;
+            object-fit: cover;
+        }
+        .img-before,.before-text, .see-effect-text {
+            display: block;
+        }
+        .img-after,.see-before-text {
+            display: none;
+        }
+        .effect-desc {
+            position: absolute;
+            top: 40%;
+            padding: 1.6vw;
+            font-family: MyriadPro-Bold;
+            .effect-text {
+                text-align: center;
+                line-height: 1.2vw;
+                margin-top: 1vw;
+                font-family: MyriadPro-Regular;
+            }
+        }
+        .effect-title {
+            font-size: 1.3vw;
+        }
+        .before-text {
+            position: absolute;
+            background-color: $orange-lighter;
+            top: 0;
+            left: 0;
+            padding: 0.3vw 0.9vw;
+            font-size: 0.8vw;
+            text-transform: uppercase;
+            z-index: 999;
+        }
+        .see-more-row {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .see-more {
+            width: 14vw;
+            height:2.7vw;
+            margin: 1.5vw auto 1vw;
+            img {
+                background-color: white;
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+            .see-more-text {
+                color: $orange-lighter;
+                font-size: 1vw;
+                top: 20%;
+                left: 10%;
+                width: 70%;
+                font-family: myriadpro-light;
+            }
+        }
+    }
+    .effect-box:hover {
+        background-color: white;
+        *:not(.bold) {
+            color:black;
+            background-color: white;
+        }  
+        .effect-title {
+            color: $orange-lighter;
+        }
+        .img-before,.before-text, .see-effect-text {
+            display: none;
+        }
+        .img-after, .see-before-text {
+            display: block;
+        }
+        .see-more {
+            width: 16vw;
+            height:2.7vw;
+            img {
+                background-color: white;
+                width: 100%;
+                height: 100%;
+            }
+            .see-more-text {
+                color: black;
+                font-size: 1vw;
+                top: 20%;
+                left: 10%;
+                width: 70%;
+                font-family: myriadpro-light;
+            }
+        }
+    }
+}
+
+.suppl_effects {
+    margin-top: 2vw;
+    .bold {
+        font-size: 1.3vw;
+    }
+    .orange-thin-line {
+        margin-top: 0.5vw;
+        width: 70%;
+    }
+    .black-italic {
+        padding: 0 2.4vw;
+        font-size: 1.4vw;
+    }
+}
+
+.suppl-photo {
+    margin: 3vw 0;
+    height: 21vw;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    img {
+        width: 97%;
+    }
+    .photo-desc {
+        top: 100%;
+        width: 97%;
+        transition: all .3s ease-out;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 1.4vw;
+        line-height: 1.6vw;
+        background-color: #bb4e00b3;
+        color: white;
+        p {
+            padding: 0.7vw 1.2vw 0;
+        }
+    }
+}
+.suppl-photo:hover {
+    .photo-desc {
+        top: 78%;
+    }        
+}
+
+.inside-navigation {
+    margin-top: 2vw;
+    width: 60%;
+    font-family: myriadpro-light;
+    font-style: italic;
+    .main-navbar {
+        width: 100%;
+        padding:0!important;
+        .navbar-toggler {
+            font-size: 13vw;
+            color: white;
+            border: none;
+        }
+        .main-nav {
+            width: 100%;
+        }
+        .nav-item {
+            font-size: 1.2vw;
+            padding: 0;
+            text-align: center;
+            box-sizing: border-box;
+            width: 20%;
+            line-height: 1.4vw;
+            border-top: 5px solid $gray;
+            padding-top: 0.5vw!important;
+            .nav-link {
+                color:black;
+            }
+            .move-up {
+                margin-top: -0.4vw;
+            }
+        }
+        .nav-item.active{
+            border-top: 9px solid $orange-lighter;
+            color: $orange-lighter;
+            padding-top: 0!important;
+            .nav-link {
+                color:$orange-lighter;
+            }
+        }
+
+    }        
+}
+
+.distributors {
+    .header-orange-bg {
+        text-transform: uppercase;
+        max-width: 50%;
+    }
+    .black-italic {
+        font-family: MyriadPro-Light;
+        font-style: italic;
+        line-height: 1.5vw;
+        padding: 0vw 3vw;
+        margin-top: 1vw;
+        
+    }
+}
+
+
+// BREAKPOINTS
+@import "breakpoints.scss";

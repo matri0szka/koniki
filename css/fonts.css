@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url("../fonts/MyriadPro-Regular.otf"); }
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url("../fonts/MyriadPro-Bold.otf"); }
+@font-face {
+  font-family: 'myriadpro-light';
+  src: url("../fonts/myriadpro-light.otf"); }
+@font-face {
+  font-family: 'MyriadPro-SemiboldIt';
+  src: url("../fonts/MyriadPro-SemiboldIt.otf"); }
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Lt';
+  src: url("../fonts/HelveticaNeueLTPro-Lt.otf"); }
+@font-face {
+  font-family: 'HelveticaNeueLTPro-LtIt';
+  src: url("../fonts/HelveticaNeueLTPro-LtIt.otf"); }
+@font-face {
+  font-family: 'HelveticaNeueLTPro-CnO';
+  src: url("../fonts/HelveticaNeueLTPro-Cn.otf"); }
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Cn';
+  src: url("../fonts/HelveticaNeueLTPro-Cn.otf"); }
+
+/*# sourceMappingURL=fonts.css.map */

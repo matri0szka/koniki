@@ -1,0 +1,520 @@
+@include media-breakpoint-up(md) { //min-width: 768px
+    .about-us {
+        .orange-text {
+            padding: 0;
+        }
+    }
+    .orange-text {
+        font-size: 2.5vw;
+        line-height: 2.7vw;
+    }
+}
+
+@include media-breakpoint-up(lg) { //min-width: 992px
+    .orange-title {
+        font-size: 2.8vw;
+    }
+    .orange-text {
+        font-size: 2vw;
+        line-height: 2.3vw;
+    }
+    .yarrowia-lipolytica {
+        .orange-text {
+            text-align: justify;
+        }
+    }
+    .trusted {
+        padding: 0 16vw;
+    }
+    .news {
+        .see-more-row {
+            justify-content: flex-end;
+            .see-more {
+                transform: scale(0.7);
+            }
+        }
+    }
+    .see-more {
+        transform: scale(1);
+    }
+    .other-news {
+        .single-news {
+            .see-more {
+                transform: scale(0.7);
+            }
+        }
+    }
+    .effects-photos {
+        .effect-box {
+            max-width: 31%;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) { //max-width: 991.98px
+    .news-details {
+        font-size: 2.8vw;
+    }
+    .news-subtitle {
+        font-size: 3.1vw;
+        line-height: 4vw;
+    }
+    .orange-text {
+        text-align: center;
+    }
+    .main-text {
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+    .main-navbar {
+        .nav-item {
+            font-size: 1.4vw;
+            line-height: 2vw;
+            padding: 0.7vw 0vw 0vw 0vw;
+        }
+    }
+
+    .header {
+        .header-btns {
+            .facebook-icon, .shop-icon {
+                width: 2.8vw;
+                margin-top: 0.3vw;
+            }
+        }
+
+    }
+    .about-us {
+        padding: 0 4vw;
+        .main-text {
+            margin: 4vw 0;
+        }
+    }
+
+    .see-more {
+        transform: scale(2);
+    }
+
+    .news {
+        .see-more {
+            margin-top: 6vw;
+        }
+        .news-title {
+            font-size: 5.4vw;
+        }
+    }
+    .ambassadors {
+        margin-top: 16.6vw;
+        margin-bottom: 13vw;
+    }
+    .main-navbar .dropdown-menu {
+        font-size: 1.5vw;
+    }
+
+    .trusted {
+        margin-top: 16.2vw;
+    }
+
+    
+    .yarrowia-lipolytica  {
+        padding: 0 4vw;
+        .see-more {
+            top: 5vw;
+        }
+        .orange-text {
+            padding-right: 0;
+        }
+    }
+    
+    .contact {  
+        h2 {
+            font-size: 3vw;
+        }   
+    }
+    .other-news {
+        margin-top: -7vw;
+        .news-row {
+            padding: 0 5vw;
+            .single-news {
+                margin: 10vw 0 10vw;
+                .news-title {
+                    font-size: 5vw;
+                    margin-top: 1.6vw;
+                }
+                .news-details {
+                    font-size: 2vw;
+                    margin: 1vw 0;
+                }
+            }
+            .see-more {
+                margin-left: -6vw;
+                left: 50%;
+                top: 105%;
+            }
+        }
+    }
+    .full-news {
+        margin-top: 5vw;
+        .main-news-photo {
+            margin: 0vw auto 4vw;
+        }
+        .orange-thin-line {
+            width: 100%;
+        }
+        .orange-title {
+            font-size: 4vw;
+            margin-top: 1.2vw;
+        }
+        .other-news {
+            .orange-title {
+                margin-bottom: -6vw;
+                font-size: 6.2vw;
+                margin-top: 6.2vw;
+                padding: 2vw;
+            }
+        }
+    }
+    .mbr-gallery {
+        margin-bottom: 4vw;
+        .orange-title {
+            font-size: 4vw;
+        }
+    }
+    .effectiveness {
+        .header-orange-bg {
+            font-size: 2.7vw;
+            max-width: 100%;
+        }
+        .banner {
+            margin-bottom: 4vw;
+        }
+        .orange-text {
+            font-size: 5vw;
+            margin-top: 7vw;
+            margin-bottom: 6vw;
+        }
+    }
+    .exclamation .exclamation-mark {
+        padding: 0.2vw 5vw 0.4vw 4vw;
+        font-size: 5.5vw;
+    }
+    .effectiveness .effectiveness-text .exclamation {
+        max-width: 100%;
+    }
+    .exclamation .exclamation-text {
+        font-size: 3vw;
+        line-height: 3.3vw;
+        margin-top: 0vw;
+        padding-top: 0.5vw;
+    }
+    .effectiveness_2 {
+        .see {
+            margin: 6vw;
+            transform: scale(2);
+        }
+        .results-see {
+            margin-left: 1.5vw;
+        }
+    }
+    .effectiveness_3 {
+        .see {
+            margin: 3vw auto;
+            transform: scale(2);
+        }
+    }
+    .effectiveness_3 ul {
+        line-height: 5vw;
+    }
+    .orange-italic {
+        font-size: 2.5vw;
+        line-height: 2.7vw;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+
+@include media-breakpoint-up(xs) { //min-width: 576px
+    .header-orange-bg {
+        font-size: 3.2vw;
+        border-bottom-right-radius: 2vw;
+    }
+    .yarrowia-lipolytica {
+        .header-orange-bg {
+            width: 119%;
+            margin-left: -1vw;
+        }
+    }
+    .news {
+        .header-orange-bg {
+            width: 23vw;
+        }
+    }
+    .contact {
+        .header-orange-bg {
+            width: 16vw;
+        }
+    }
+
+}
+
+
+@include media-breakpoint-up(xl) { //min-width: 1200px
+    .header-orange-bg {
+        font-size: 2.2vw;
+        border-bottom-right-radius: 2vw;
+    }
+    .effectiveness_2 {
+        .results-see {
+            margin-left: 0vw;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) { //max-width: 575.98px
+    .container-fluid {
+        padding: 0;
+    }
+    .container {
+        padding: 0 30px;
+    }
+    .navigation {
+        padding: 0;
+    }
+    .header-orange-bg { 
+        color: white;
+        background-color: #F48120;
+        padding: 0.4vw 0vw 0.4vw 1.7vw;
+        border-bottom-right-radius: 3vw;
+        font-family: MyriadPro-Bold;
+        font-size: 6vw;
+    }
+    .header {
+        text-align: center;
+        .logo {
+            width: 43vw;
+            margin: 3.95vw 0 0 0.35vw;
+        }
+        .header-btns {
+            margin: 1.1vw 0vw 2vw 26vw;
+            .facebook-icon, .shop-icon {
+                width: 5.5vw;
+                margin-left: 0vw;
+            }
+            span {
+                margin-right: 1.3vw;
+                padding: 0.7vw 1vw;
+            }
+        }
+    }
+
+    .main-navbar {
+        background-color: $orange-lighter;
+        .dropdown-menu {
+            text-align: center; 
+            background-color: white;
+            font-size: 4.5vw;
+        }
+        .nav-item {
+            width: 100%;
+            border-top: none;
+            font-size: 5vw;
+            line-height: 5.7vw;
+            .nav-link {
+                color: white;
+            }
+        }
+        .nav-item.active{
+            .nav-link {
+                background-color: white;
+                color: black;
+                border: none;
+            }
+        }
+    }
+
+    .carousel-main {
+        padding: 0!important;
+        .carousel-indicators li {
+            height:3vw;
+            width: 3vw;
+        }  
+        .carousel-item {
+            img {
+                height: 47vw;
+            }
+        }     
+    }
+
+    .about-us {
+        .header-orange-bg {
+            margin: 1vw -1.5vw;
+        }
+        .skotan-logo {
+            margin: 1.1vw 26vw;
+            width: 26vw;
+
+        }
+        .orange-text {
+            margin: 1.2vw auto 2vw;
+            text-align: center;
+        }
+        .about-horse {
+            margin-left: -1.5vw;
+        }
+        .see-more {
+            top: 6.2vw;
+        }
+    }
+    .see-more {
+        transform: scale(2.8);
+    }
+    .yarrowia-lipolytica  {
+        margin-top: 20vw;
+        .yarrowia-logo {
+            right: -6px;
+            width: 36.5vw;
+        }
+        .see-more {
+            top: 10vw;
+        }
+        .main-text {
+            margin: 4vw 3vw;
+        }
+        .yarrowia-lipolytica-bottom {
+            .orange-text{
+                margin: 3vw;
+            }
+        }
+
+    }
+
+    .trusted {
+      margin-top: 17vw;
+      padding: 0 30px;
+      img {
+        width:80%;
+    }
+    }
+
+    .news {
+        padding: 0 9vw;
+        .header-orange-bg {
+            width: 46vw;
+        }
+        .news-text {
+            font-size: 3.5vw;
+        }
+    }
+    .contact {
+        .header-orange-bg {
+            width: 33vw;
+            margin-bottom: 9vw;
+        }     
+        h2 {
+            font-size: 5.1vw;
+        }   
+    }
+    .other-news {
+        margin-top: -1vw;
+        padding: 0;
+    }
+    .mbr-gallery .mbr-gallery-item {
+        margin-left: 5%;
+        top: 0px;
+        margin-bottom: 12vw;
+        width: 90%;     
+    }
+    .mbr-gallery {
+        padding: 2vw 0;    
+    }    
+
+    .effectiveness .header-orange-bg {
+        padding: 2vw;
+        font-size: 4vw;
+        font-family: MyriadPro-Regular;
+    }
+
+}
+
+
+@media (min-width: 1600px) {
+    .main-navbar {
+        .nav-item {
+            font-size: 0.9vw;
+        }
+    }
+    .main-text {
+        font-size: 1vw;
+        line-height: 1.4vw;
+    }
+    .orange-text {
+        font-size: 1.3vw;
+        line-height: 1.7vw;
+    }
+    .yarrowia-lipolytica  {
+        .yarrowia-logo {
+            width: 10.5vw;
+            position: absolute;
+            right: 4vw;
+        }
+        .yarrowia-img {
+            width: 104%;
+            margin-left: 0vw;
+            margin-top: 4vw;
+        }
+    }
+    .header-orange-bg {
+        font-size: 2vw;
+    }
+    .news {
+        padding: 0 19.1vw;
+    }
+    .contact {
+        padding: 0 19.1vw;
+    }
+    .footer {
+        padding:0 0vw;
+        .copyright {
+            padding: 3.5vw 16vw 1vw;
+        }
+        .contact-details {
+            margin-left: 7vw;
+        }
+    }
+    .effectiveness {
+        .banner {
+            margin-top: 2vw;
+            margin-bottom: 1.9vw;
+        }
+        .header-orange-bg {
+            font-size: 1.4vw;
+            max-width: 93%;
+        }
+        .orange-text {
+            font-size: 1.6vw;
+            margin-top: 2vw;
+        }
+        .effectiveness-text {
+            margin: 2.5vw 1vw 0 2.2vw;
+            .exclamation {
+                margin-top: 4.3vw;
+                max-width: 85%;
+            }
+        }
+    }
+    .effects .header-orange-bg {
+        font-size: 1.4vw;
+    }
+}
+
+@include media-breakpoint-down(md) { //max-width: 768px
+    .main-text {
+        font-size: 3vw;
+        line-height: 3.5vw;
+    }
+}
+
+@media (min-width:2000px){
+    .container {
+        max-width: 70vw;
+    }
+}
