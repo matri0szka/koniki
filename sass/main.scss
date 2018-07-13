@@ -8,14 +8,14 @@ $white: #FFFFFF;
 
 body {
     // background-image: url("../img/badanie.jpg");
-    @include media-breakpoint-up(md) { 
-        background-image: url("../img/dist.jpg");
-        background-size: 80%;
-    }    
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 82%;
-    height: 7000px;
+    // @include media-breakpoint-up(md) { 
+    //     background-image: url("../img/dist.jpg");
+    //     background-size: 80%;
+    // }    
+    // background-repeat: no-repeat;
+    // background-position: center top;
+    // background-size: 82%;
+    // height: 7000px;
     font-family: MyriadPro-Regular;
     overflow-x: hidden!important;
 }
@@ -184,7 +184,7 @@ a:hover {
             color:$orange-lighter;
         }
     }
-    .dropdown-item.active {
+    .dropdown-item:active {
         background-color: #B2B2B2;
         color: black;
 
@@ -1038,7 +1038,7 @@ a:hover {
 }
 
 .inside-navigation {
-    margin-top: 2vw;
+    margin-top: 2.5vw;
     width: 60%;
     font-family: myriadpro-light;
     font-style: italic;
@@ -1083,19 +1083,83 @@ a:hover {
 
 .distributors {
     .header-orange-bg {
+        margin-top: 2.5vw;
         text-transform: uppercase;
         max-width: 50%;
     }
     .black-italic {
         font-family: MyriadPro-Light;
         font-style: italic;
+        font-size: 1.4vw;
         line-height: 1.5vw;
-        padding: 0vw 3vw;
+        padding: 1vw 3vw;
         margin-top: 1vw;
         
     }
+    .name {
+        font-size: 1.1vw;
+        margin: 0.8vw 0;
+        line-height: 1.2vw;
+        height: 3vw;
+        font-family: MyriadPro-Light;
+    }
+    .orange-text {
+        line-height: 1.5vw;
+        font-size: 1.5vw;
+    }
+    .smaller {
+        font-size: 1vw;
+    }
+    .details {
+        margin: 3vw 1vw 5vw 0;
+        
+    }
+    .details > div {
+        padding:0 2vw 0 1vw;
+    }
+
+    .detail {
+        position: relative;
+        .detail-img {
+            position: absolute;
+            top: 0vw;
+            left: 0.8vw;
+            width: 1.5vw;
+        }
+        .detail-desc {
+            text-align: left;
+            font-size: 1vw;
+            margin-left: 2.8vw;
+            margin-bottom: 0.5vw;
+        }
+    }
+    .become-partner-text{
+        font-size: 2vw;
+        font-family: MyriadPro-Light;
+        margin-top: 2vw;
+        .orange-text {
+            font-size: 2vw;
+        }
+        
+    }
+    .see-more {
+        margin-top: 1vw;
+        width: 13vw;
+        height: 3vw;
+        img {
+            height: 100%;
+        }
+        .see-more-text {
+            font-size: 1vw;
+            font-family: MyriadPro-Light;
+            top: 0.7vw;
+            left: 1.4vw;
+        }
+    }
+    
 }
 
 
 // BREAKPOINTS
 @import "breakpoints.scss";
+
