@@ -6820,7 +6820,7 @@ a:hover {
 
 .news-details {
   font-size: 1vw;
-  margin: -0.6vw 0.4vw 0.4vw;
+  margin: 0.4vw 0.4vw 0.4vw;
   font-family: HelveticaNeueLTPro-LtIt;
   color: #686868; }
 
@@ -6877,13 +6877,13 @@ a:hover {
       color: black; }
     .main-navbar .nav-item .move-up {
       margin-top: -0.4vw; }
-  .main-navbar .nav-item.active {
+  .main-navbar .nav-item.active, .main-navbar .nav-item:active {
     border-top: 9px solid #F48120;
     color: #F48120;
     padding-top: 0.5vw !important; }
-    .main-navbar .nav-item.active .nav-link {
+    .main-navbar .nav-item.active .nav-link, .main-navbar .nav-item:active .nav-link {
       color: #F48120; }
-  .main-navbar .dropdown-item:active {
+  .main-navbar .dropdown-item.active, .main-navbar .dropdown-item:active {
     background-color: #B2B2B2;
     color: black; }
 
@@ -7375,17 +7375,14 @@ a:hover {
 .effects .header-orange-bg {
   margin-top: 3vw; }
 .effects .orange-italic {
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: center;
-  margin: 2vw auto; }
+  margin: 3vw auto; }
 .effects .orange-text {
   font-size: 2vw;
   margin: 4vw 0 2vw; }
-.effects .effect-text {
-  font-size: 0.9vw; }
 .effects ul {
-  margin-top: 1.3vw;
-  line-height: 1.4vw; }
+  margin-top: 1.3vw; }
   .effects ul li {
     padding: 0.1vw 0; }
 
@@ -7406,37 +7403,44 @@ a:hover {
   position: relative;
   padding: 0;
   margin: 1%;
-  min-height: 28vw; }
-  .effects-photos .effect-box-shorter {
-    min-height: 20vw; }
+  min-height: 34vw;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s; }
   .effects-photos .effect-box img {
     position: absolute;
     width: 100%;
     height: 40%;
-    object-fit: cover; }
-  .effects-photos .effect-box .img-before, .effects-photos .effect-box .before-text, .effects-photos .effect-box .see-effect-text {
+    object-fit: cover;
+    transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s; }
+  .effects-photos .effect-box .before-text, .effects-photos .effect-box .see-effect-text {
     display: block; }
-  .effects-photos .effect-box .img-after, .effects-photos .effect-box .see-before-text {
+  .effects-photos .effect-box .img-before {
+    opacity: 1; }
+  .effects-photos .effect-box .see-before-text {
     display: none; }
+  .effects-photos .effect-box .img-after {
+    opacity: 0; }
   .effects-photos .effect-box .effect-desc {
     position: absolute;
     top: 40%;
-    padding: 1.6vw;
+    padding: 10%;
     font-family: MyriadPro-Bold; }
     .effects-photos .effect-box .effect-desc .effect-text {
       text-align: center;
-      line-height: 1.2vw;
+      line-height: 1.5vw;
       margin-top: 1vw;
-      font-family: MyriadPro-Regular; }
+      font-family: MyriadPro-Regular;
+      font-size: 1.2vw; }
   .effects-photos .effect-box .effect-title {
-    font-size: 1.3vw; }
+    font-size: 1.8vw; }
   .effects-photos .effect-box .before-text {
     position: absolute;
     background-color: #F48120;
     top: 0;
     left: 0;
     padding: 0.3vw 0.9vw;
-    font-size: 0.8vw;
+    font-size: 1.4vw;
     text-transform: uppercase;
     z-index: 999; }
   .effects-photos .effect-box .see-more-row {
@@ -7446,7 +7450,8 @@ a:hover {
   .effects-photos .effect-box .see-more {
     width: 14vw;
     height: 2.7vw;
-    margin: 1.5vw auto 1vw; }
+    margin: 1.5vw auto 1vw;
+    transform: scale(1.3); }
     .effects-photos .effect-box .see-more img {
       background-color: white;
       width: 100%;
@@ -7466,24 +7471,19 @@ a:hover {
     background-color: white; }
   .effects-photos .effect-box:hover .effect-title {
     color: #F48120; }
-  .effects-photos .effect-box:hover .img-before, .effects-photos .effect-box:hover .before-text, .effects-photos .effect-box:hover .see-effect-text {
+  .effects-photos .effect-box:hover .before-text, .effects-photos .effect-box:hover .see-effect-text {
     display: none; }
-  .effects-photos .effect-box:hover .img-after, .effects-photos .effect-box:hover .see-before-text {
+  .effects-photos .effect-box:hover .see-before-text {
     display: block; }
+  .effects-photos .effect-box:hover .img-before {
+    opacity: 0; }
+  .effects-photos .effect-box:hover .img-after {
+    opacity: 1; }
   .effects-photos .effect-box:hover .see-more {
     width: 16vw;
     height: 2.7vw; }
-    .effects-photos .effect-box:hover .see-more img {
-      background-color: white;
-      width: 100%;
-      height: 100%; }
     .effects-photos .effect-box:hover .see-more .see-more-text {
-      color: black;
-      font-size: 1vw;
-      top: 20%;
-      left: 10%;
-      width: 70%;
-      font-family: myriadpro-light; }
+      color: black; }
 
 .suppl_effects {
   margin-top: 2vw; }
@@ -7491,10 +7491,11 @@ a:hover {
     font-size: 1.3vw; }
   .suppl_effects .orange-thin-line {
     margin-top: 0.5vw;
-    width: 70%; }
+    width: 100%; }
   .suppl_effects .black-italic {
     padding: 0 2.4vw;
-    font-size: 1.4vw; }
+    font-size: 2.4vw;
+    line-height: 2.7vw; }
 
 .suppl-photo {
   margin: 3vw 0;
@@ -7612,13 +7613,78 @@ a:hover {
     top: 0.7vw;
     left: 1.4vw; }
 
+.technology .inside-navigation {
+  margin: 2.5vw auto;
+  width: 50%; }
+  .technology .inside-navigation .main-navbar .nav-item {
+    width: 33%; }
+.technology .orange-text {
+  text-align: justify;
+  font-size: 1.2vw;
+  line-height: 1.5vw;
+  margin: 1vw 0; }
+.technology .text {
+  margin-left: 2vw; }
+.technology .header-orange-bg {
+  margin: 2.5vw 0;
+  text-transform: uppercase; }
+.technology .production-header {
+  font-family: MyriadPro-Bold;
+  margin: 1vw 0;
+  width: 70%; }
+.technology .logo {
+  width: 20vw;
+  height: 100%;
+  margin: 2vw auto; }
+.technology .production .header-orange-bg {
+  max-width: 30%; }
+.technology .yarrowia-lipotica .header-orange-bg {
+  max-width: 60%; }
+.technology .esters .header-orange-bg {
+  width: 60%; }
+.technology .list {
+  list-style: none; }
+  .technology .list .main-text {
+    padding-left: 2.9vw;
+    margin-top: -0.3vw; }
+  .technology .list li::before {
+    content: "\002022";
+    font-size: 3vw;
+    padding: 1vw;
+    color: #F48120;
+    vertical-align: sub; }
+.technology .prizes .orange-title {
+  font-size: 2.2vw;
+  margin: 4vw auto 0vw; }
+.technology .prizes .list .main-text {
+  margin-top: -2.5vw; }
+.technology .prizes .logos {
+  margin-left: 4vw;
+  margin-top: 2vw; }
+.technology .prizes .pl-prod {
+  width: 6vw;
+  height: 100%; }
+.technology .prizes .inno {
+  width: 22vw;
+  height: 100%;
+  padding: 1vw 2vw; }
+.technology .prizes .black-italic {
+  font-family: MyriadPro-Light;
+  font-style: italic;
+  font-size: 1.3vw;
+  padding: 0 4vw;
+  margin-top: 2vw; }
+
 @media (min-width: 768px) {
   .about-us .orange-text {
     padding: 0; }
 
   .orange-text {
     font-size: 2.5vw;
-    line-height: 2.7vw; } }
+    line-height: 2.7vw; }
+
+  .effects-photos .effect-box {
+    max-width: 31% !important; } }
 @media (min-width: 992px) {
   .orange-title {
     font-size: 2.8vw; }
@@ -7806,7 +7872,11 @@ a:hover {
     margin-bottom: 1vw;
     line-height: 2.2vw; }
   .distributors .see-more {
-    transform: scale(1.3); } }
+    transform: scale(1.3); }
+
+  .effects .orange-text {
+    font-size: 3vw;
+    margin: 4vw 0 2vw; } }
 .header-orange-bg {
   font-size: 3.2vw;
   border-bottom-right-radius: 2vw; }
@@ -7822,7 +7892,20 @@ a:hover {
   width: 16vw; }
 
 .effects-photos .effect-box {
-  max-width: 31%; }
+  max-width: 48%; }
+
+.effects-photos .effect-box {
+  min-height: 47vw; }
+  .effects-photos .effect-box .effect-desc .effect-text {
+    line-height: 1.8vw;
+    margin-top: 2vw;
+    font-size: 1.5vw; }
+  .effects-photos .effect-box .effect-title {
+    font-size: 2.2vw; }
+  .effects-photos .effect-box .before-text {
+    font-size: 1.4vw; }
+  .effects-photos .effect-box .see-more {
+    transform: scale(1.5); }
 
 @media (min-width: 1200px) {
   .header-orange-bg {
@@ -7830,7 +7913,46 @@ a:hover {
     border-bottom-right-radius: 2vw; }
 
   .effectiveness_2 .results-see {
-    margin-left: 0vw; } }
+    margin-left: 0vw; }
+
+  .effects-photos .effect-box {
+    min-height: 28vw; }
+    .effects-photos .effect-box img {
+      height: 40%; }
+    .effects-photos .effect-box .effect-desc {
+      top: 40%;
+      padding: 10%; }
+      .effects-photos .effect-box .effect-desc .effect-text {
+        line-height: 1.2vw;
+        margin-top: 1vw;
+        font-size: 0.9vw; }
+    .effects-photos .effect-box .effect-title {
+      font-size: 1.3vw; }
+    .effects-photos .effect-box .before-text {
+      padding: 0.3vw 0.9vw;
+      font-size: 0.8vw; }
+    .effects-photos .effect-box .see-more {
+      width: 14vw;
+      height: 2.7vw;
+      margin: 1.5vw auto 1vw;
+      transform: scale(1); }
+      .effects-photos .effect-box .see-more .see-more-text {
+        font-size: 1vw;
+        top: 20%;
+        left: 10%;
+        width: 70%; }
+
+  .effects .orange-italic {
+    font-size: 2vw;
+    margin: 2vw auto; }
+
+  .suppl_effects .bold {
+    font-size: 1.3vw; }
+  .suppl_effects .orange-thin-line {
+    width: 70%; }
+  .suppl_effects .black-italic {
+    font-size: 1.4vw;
+    line-height: 1.6vw; } }
 @media (max-width: 575.98px) {
   .banner {
     margin-top: 0vw;
@@ -7887,6 +8009,7 @@ a:hover {
       border: none; }
 
   .inside-navigation {
+    padding: 10px 20px;
     width: 100%; }
     .inside-navigation .main-navbar {
       background-color: transparent; }
@@ -7968,9 +8091,30 @@ a:hover {
     font-family: MyriadPro-Regular; }
 
   .effects-photos .effect-box {
-    max-width: 80%;
-    margin: 4vw auto;
-    min-height: 70vw; }
+    min-height: 90vw;
+    max-width: 100%;
+    font-size: 1.9vw;
+    margin: 4vw auto; }
+    .effects-photos .effect-box .effect-desc .effect-text {
+      font-size: 3vw;
+      line-height: 3.2vw; }
+    .effects-photos .effect-box .effect-title {
+      font-size: 5vw; }
+    .effects-photos .effect-box .before-text {
+      font-size: 2.5vw; }
+    .effects-photos .effect-box .see-more {
+      transform: scale(3);
+      margin: 4vw auto; }
+      .effects-photos .effect-box .see-more .see-more-text {
+        top: 27%; }
+
+  .effects .orange-italic {
+    font-size: 4vw;
+    margin: 6vw auto 3vw;
+    line-height: 4.7vw; }
+  .effects .orange-text {
+    font-size: 4vw;
+    margin: 8vw 0 4vw; }
 
   .distributors .header-orange-bg {
     max-width: 100%; }
@@ -8013,7 +8157,23 @@ a:hover {
       font-size: 1vw;
       font-family: MyriadPro-Light;
       top: 0.7vw;
-      left: 1.4vw; } }
+      left: 1.4vw; }
+
+  .suppl_effects {
+    padding: 0 15px; }
+
+  .suppl_effects .bold {
+    font-size: 2.7vw; }
+
+  .suppl_effects ul {
+    font-size: 3vw !important; }
+
+  .suppl-photo {
+    height: 50vw; }
+
+  .suppl-photo .photo-desc p {
+    padding: 2.4vw 4.2vw 0;
+    line-height: 3.6vw; } }
 @media (min-width: 1600px) {
   .main-navbar .nav-item {
     font-size: 0.9vw; }
@@ -8079,7 +8239,11 @@ a:hover {
     margin: 3vw;
     font-size: 4vw; }
     .distributors .become-partner-text .orange-text {
-      font-size: 3.5vw; } }
+      font-size: 3.5vw; }
+
+  .suppl_effects ul {
+    font-size: 2vw;
+    line-height: 3.5vw; } }
 @media (min-width: 2000px) {
   .container {
     max-width: 70vw; } }

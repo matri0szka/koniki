@@ -8,6 +8,11 @@
         font-size: 2.5vw;
         line-height: 2.7vw;
     }
+    .effects-photos {
+        .effect-box {
+            max-width: 31%!important;
+        }
+    }
 }
 
 @include media-breakpoint-up(lg) { //min-width: 992px
@@ -270,6 +275,10 @@
         }
         
     }
+    .effects .orange-text {
+        font-size: 3vw;
+        margin: 4vw 0 2vw;
+    }
 }
 
 @include media-breakpoint-up(xs) { //min-width: 576px
@@ -295,7 +304,31 @@
     }
     .effects-photos {
         .effect-box {
-            max-width: 31%;
+            max-width: 48%;
+        }
+    }
+    .effects-photos {
+        .effect-box {
+            min-height: 47vw;
+            img {
+            }
+            .effect-desc {
+                .effect-text {
+                    line-height: 1.8vw;
+                    margin-top: 2vw;
+                    font-size: 1.5vw;
+                }
+            }
+            .effect-title {
+                font-size: 2.2vw;
+            }
+            .before-text {
+                font-size: 1.4vw;
+            }
+            .see-more {
+                transform: scale(1.5);
+
+            }
         }
     }
 
@@ -310,6 +343,62 @@
     .effectiveness_2 {
         .results-see {
             margin-left: 0vw;
+        }
+    }
+    .effects-photos {
+        .effect-box {
+            min-height: 28vw;
+            img {
+                height: 40%;
+            }
+            .effect-desc {
+                top: 40%;
+                padding: 10%;
+                .effect-text {
+                    line-height: 1.2vw;
+                    margin-top: 1vw;
+                    font-size: 0.9vw;
+                }
+            }
+            .effect-title {
+                font-size: 1.3vw;
+            }
+            .before-text {
+                padding: 0.3vw 0.9vw;
+                font-size: 0.8vw;
+            }
+            .see-more {
+                width: 14vw;
+                height:2.7vw;
+                margin: 1.5vw auto 1vw;
+                transform: scale(1);
+                .see-more-text {
+                    font-size: 1vw;
+                    top: 20%;
+                    left: 10%;
+                    width: 70%;
+                }
+            }
+        }
+    }
+    .effects {
+        .orange-italic {
+            font-size: 2vw;
+            margin: 2vw auto;
+        }
+        ul {
+        }
+    }
+    .suppl_effects {
+        .bold {
+            font-size: 1.3vw;
+        }
+        .orange-thin-line {
+            width: 70%;
+        }
+        .black-italic {
+            font-size: 1.4vw;
+            line-height: 1.6vw;
         }
     }
 }
@@ -381,6 +470,7 @@
         }
     }
     .inside-navigation {
+        padding: 10px 20px;
         width: 100%;
         .main-navbar {
             background-color:transparent;
@@ -494,9 +584,42 @@
     }
     .effects-photos {
         .effect-box {
-            max-width: 80%;
+            min-height: 90vw;
+            max-width: 100%;
+            font-size: 1.9vw;
             margin: 4vw auto;
-            min-height: 70vw;
+            img {
+            }
+            .effect-desc {
+                .effect-text {
+                    font-size: 3vw;
+                    line-height: 3.2vw;
+                }
+            }
+            .effect-title {
+                font-size: 5vw;
+            }
+            .before-text {
+                font-size: 2.5vw;
+            }
+            .see-more {
+                transform: scale(3);
+                margin: 4vw auto;
+                .see-more-text {
+                    top: 27%;
+                }
+            }
+        }
+    }
+    .effects {
+        .orange-italic {
+            font-size: 4vw;
+            margin: 6vw auto 3vw;
+            line-height: 4.7vw;
+        }
+        .orange-text {
+            font-size: 4vw;
+            margin:8vw 0 4vw;
         }
     }
     
@@ -562,6 +685,22 @@
             }
         }
         
+    }
+    .suppl_effects {
+        padding: 0 15px;
+    }
+    .suppl_effects .bold {
+        font-size: 2.7vw;
+    }
+    .suppl_effects ul {
+        font-size: 3vw!important;
+    }
+    .suppl-photo {
+        height: 50vw;
+    }
+    .suppl-photo .photo-desc p {
+        padding: 2.4vw 4.2vw 0;
+        line-height: 3.6vw;
     }
 
 }
@@ -654,6 +793,13 @@
             }
         }
     }
+    .suppl_effects {
+        ul {
+            font-size: 2vw;
+            line-height: 3.5vw;
+        }
+    }
+    
 
 }
 

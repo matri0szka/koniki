@@ -102,7 +102,7 @@ a:hover {
 
 .news-details {
     font-size: 1vw;
-    margin: -0.6vw 0.4vw 0.4vw;
+    margin: 0.4vw 0.4vw 0.4vw;
     font-family: HelveticaNeueLTPro-LtIt;
     color:#686868;
 } 
@@ -176,7 +176,7 @@ a:hover {
             margin-top: -0.4vw;
         }
     }
-    .nav-item.active{
+    .nav-item.active, .nav-item:active,{
         border-top: 9px solid $orange-lighter;
         color: $orange-lighter;
         padding-top: 0.5vw!important;
@@ -184,7 +184,7 @@ a:hover {
             color:$orange-lighter;
         }
     }
-    .dropdown-item:active {
+    .dropdown-item.active, .dropdown-item:active, {
         background-color: #B2B2B2;
         color: black;
 
@@ -849,20 +849,16 @@ a:hover {
         margin-top: 3vw;
     }
     .orange-italic {
-        font-size: 2vw;
+        font-size: 3vw;
         text-align: center;
-        margin: 2vw auto;
+        margin: 3vw auto;
     }
     .orange-text {
         font-size: 2vw;
         margin: 4vw 0 2vw;
     }
-    .effect-text {
-        font-size: 0.9vw;
-    }
     ul {
         margin-top: 1.3vw;
-        line-height: 1.4vw;
         li {
             padding: 0.1vw 0;
         }
@@ -889,36 +885,44 @@ a:hover {
         position: relative;
         padding: 0;
         margin: 1%;
-        min-height: 28vw;
-        &-shorter {
-            min-height: 20vw;
-        }
+        min-height: 34vw;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
         img {
             position: absolute;
             width: 100%;
             height: 40%;
             object-fit: cover;
+            transition: opacity 0.2s;
+            -webkit-transition: opacity 0.2s;
         }
-        .img-before,.before-text, .see-effect-text {
+        .before-text, .see-effect-text {
             display: block;
         }
-        .img-after,.see-before-text {
+        .img-before {
+            opacity: 1;
+        }
+        .see-before-text {
             display: none;
+        }
+        .img-after {
+            opacity: 0;
         }
         .effect-desc {
             position: absolute;
             top: 40%;
-            padding: 1.6vw;
+            padding: 10%;
             font-family: MyriadPro-Bold;
             .effect-text {
                 text-align: center;
-                line-height: 1.2vw;
+                line-height: 1.5vw;
                 margin-top: 1vw;
                 font-family: MyriadPro-Regular;
+                font-size: 1.2vw;
             }
         }
         .effect-title {
-            font-size: 1.3vw;
+            font-size: 1.8vw;
         }
         .before-text {
             position: absolute;
@@ -926,7 +930,7 @@ a:hover {
             top: 0;
             left: 0;
             padding: 0.3vw 0.9vw;
-            font-size: 0.8vw;
+            font-size: 1.4vw;
             text-transform: uppercase;
             z-index: 999;
         }
@@ -939,6 +943,7 @@ a:hover {
             width: 14vw;
             height:2.7vw;
             margin: 1.5vw auto 1vw;
+            transform: scale(1.3);
             img {
                 background-color: white;
                 width: 100%;
@@ -964,27 +969,23 @@ a:hover {
         .effect-title {
             color: $orange-lighter;
         }
-        .img-before,.before-text, .see-effect-text {
+        .before-text, .see-effect-text {
             display: none;
         }
-        .img-after, .see-before-text {
+        .see-before-text {
             display: block;
+        }
+        .img-before {
+            opacity: 0;
+        }
+        .img-after {
+            opacity: 1;
         }
         .see-more {
             width: 16vw;
             height:2.7vw;
-            img {
-                background-color: white;
-                width: 100%;
-                height: 100%;
-            }
             .see-more-text {
                 color: black;
-                font-size: 1vw;
-                top: 20%;
-                left: 10%;
-                width: 70%;
-                font-family: myriadpro-light;
             }
         }
     }
@@ -997,11 +998,12 @@ a:hover {
     }
     .orange-thin-line {
         margin-top: 0.5vw;
-        width: 70%;
+        width: 100%;
     }
     .black-italic {
         padding: 0 2.4vw;
-        font-size: 1.4vw;
+        font-size: 2.4vw;
+        line-height: 2.7vw;
     }
 }
 
@@ -1159,7 +1161,103 @@ a:hover {
     
 }
 
-
+.technology {
+    .inside-navigation {
+        margin: 2.5vw auto;
+        width: 50%;
+        .main-navbar {
+            .nav-item {
+                width: 33%;
+            }
+        }        
+    }
+    .orange-text {
+        text-align: justify;
+        font-size: 1.2vw;
+        line-height: 1.5vw;
+        margin: 1vw 0;
+    }
+    .text {
+        margin-left: 2vw;
+    }
+   .header-orange-bg {
+        margin: 2.5vw 0;
+        text-transform: uppercase;
+    }
+    .production-header {
+        font-family: MyriadPro-Bold;
+        margin: 1vw 0;
+        width: 70%;
+    }
+    .logo {
+        width: 20vw;
+        height: 100%;
+        margin: 2vw auto;
+    }
+    .production {
+        .header-orange-bg {
+            max-width: 30%;
+        }
+    }
+    .yarrowia-lipotica {
+        .header-orange-bg {
+            max-width: 60%;
+        }
+    }
+    .esters {
+        .header-orange-bg {
+            width: 60%;
+        }
+    }
+    .list {
+        list-style: none;
+        .main-text {
+            padding-left: 2.9vw;
+            margin-top: -0.3vw;
+        }
+        li::before {
+            content: "\002022"; 
+            font-size: 3vw;
+            padding: 1vw;
+            color: $orange-lighter;
+            vertical-align: sub;
+        }
+    }
+    
+    .prizes {
+        .orange-title {
+            font-size: 2.2vw;
+            margin: 4vw auto 0vw;
+        }
+        .list {
+            .main-text {
+                margin-top: -2.5vw;
+            }
+        }
+        .logos {
+            margin-left: 4vw;
+            margin-top: 2vw;
+        }
+        .pl-prod {
+            width:6vw;
+            height: 100%;
+        }
+        .inno {
+            width: 22vw;
+            height: 100%;
+            padding: 1vw 2vw;
+        }
+        .black-italic {
+            font-family: MyriadPro-Light;
+            font-style: italic;
+            font-size: 1.3vw;
+            padding: 0 4vw;
+            margin-top: 2vw;
+            
+        }
+        
+    }
+}
 // BREAKPOINTS
 @import "breakpoints.scss";
 
