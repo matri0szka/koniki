@@ -6790,7 +6790,7 @@ a:hover {
   text-decoration: none; }
 
 .orange-line {
-  border: 1.5px solid #F48120;
+  border: 1px solid #F48120;
   margin-top: 1.4vw; }
 
 .orange-text {
@@ -7620,8 +7620,8 @@ a:hover {
     width: 33%; }
 .technology .orange-text {
   text-align: justify;
-  font-size: 1.2vw;
-  line-height: 1.5vw;
+  font-size: 1.6vw;
+  line-height: 1.7vw;
   margin: 1vw 0; }
 .technology .text {
   margin-left: 2vw; }
@@ -7643,21 +7643,13 @@ a:hover {
 .technology .esters .header-orange-bg {
   width: 60%; }
 .technology .list {
-  list-style: none; }
+  color: #F48120;
+  font-size: 2vw; }
   .technology .list .main-text {
-    padding-left: 2.9vw;
-    margin-top: -0.3vw; }
-  .technology .list li::before {
-    content: "\002022";
-    font-size: 3vw;
-    padding: 1vw;
-    color: #F48120;
-    vertical-align: sub; }
+    color: black; }
 .technology .prizes .orange-title {
   font-size: 2.2vw;
   margin: 4vw auto 0vw; }
-.technology .prizes .list .main-text {
-  margin-top: -2.5vw; }
 .technology .prizes .logos {
   margin-left: 4vw;
   margin-top: 2vw; }
@@ -7674,6 +7666,68 @@ a:hover {
   font-size: 1.3vw;
   padding: 0 4vw;
   margin-top: 2vw; }
+
+.contact-tab .details {
+  margin: 3vw 0; }
+  .contact-tab .details .skotan-logo {
+    margin: 1vw 0 0 -2vw; }
+  .contact-tab .details p {
+    margin: 0;
+    padding-left: 1vw;
+    text-align: left; }
+  .contact-tab .details .bold, .contact-tab .details .orange-text {
+    font-size: 1.7vw;
+    line-height: 2vw; }
+.contact-tab .col-border {
+  border-left: 2px solid #F48120; }
+.contact-tab .details-1 {
+  padding: 3vw 6vw; }
+  .contact-tab .details-1 .contact-icon {
+    width: 3vw;
+    height: 100%; }
+  .contact-tab .details-1 p {
+    padding-left: 1vw;
+    line-height: 1.9vw;
+    font-size: 1.5vw; }
+    .contact-tab .details-1 p .orange-text {
+      font-size: 2vw; }
+.contact-tab .form {
+  padding: 1vw 3vw;
+  margin-top: 3vw;
+  font-style: italic; }
+  .contact-tab .form .main-text {
+    font-size: 1.3vw; }
+  .contact-tab .form .form-check-label {
+    margin-bottom: 0;
+    font-family: MyriadPro-Light; }
+  .contact-tab .form .send {
+    margin-top: 3vw; }
+    .contact-tab .form .send .send-text {
+      font-style: normal;
+      left: 2.4vw; }
+
+.product .main-info .product-img {
+  width: 60%;
+  float: right; }
+.product .main-info .orange-text {
+  margin-top: 4vw; }
+.product .main-info .see-more {
+  margin-top: 2vw;
+  position: relative;
+  width: 15vw; }
+  .product .main-info .see-more img {
+    position: absolute;
+    width: 100%; }
+  .product .main-info .see-more .see-more-text {
+    position: relative;
+    font-size: 1.2vw;
+    top: 0.6vw;
+    left: 3.2vw; }
+.product .inside-navigation {
+  margin: 5vw auto;
+  width: 40%; }
+  .product .inside-navigation .main-navbar .nav-item {
+    width: 33%; }
 
 @media (min-width: 768px) {
   .about-us .orange-text {
@@ -7876,7 +7930,45 @@ a:hover {
 
   .effects .orange-text {
     font-size: 3vw;
-    margin: 4vw 0 2vw; } }
+    margin: 4vw 0 2vw; }
+
+  .technology .header-orange-bg {
+    margin: 5.5vw 0; }
+  .technology .text {
+    margin-left: 0vw; }
+  .technology .list {
+    font-size: 4vw;
+    line-height: 0vw; }
+    .technology .list .main-text {
+      margin-top: 2vw; }
+  .technology .orange-text {
+    font-size: 2.5vw;
+    line-height: 2.7vw; }
+  .technology .logo {
+    width: 35vw; }
+  .technology .production-header {
+    width: 100%;
+    margin: 2vw 0; }
+  .technology .prizes .orange-title {
+    font-size: 3.5vw; }
+  .technology .prizes .black-italic {
+    font-size: 2vw;
+    line-height: 2.7vw; }
+
+  .contact-tab .details-1 {
+    margin-top: 10vw; }
+
+  .contact-tab .see {
+    margin-top: 3vw;
+    transform: scale(1.7); }
+  .contact-tab .details-1 > * {
+    transform: scale(1.5); }
+  .contact-tab .details .skotan-logo {
+    padding: 1vw 0 0 0vw;
+    width: 23vw; }
+  .contact-tab .form .main-text {
+    font-size: 3vw;
+    line-height: 4vw; } }
 .header-orange-bg {
   font-size: 3.2vw;
   border-bottom-right-radius: 2vw; }
@@ -8128,7 +8220,8 @@ a:hover {
     height: 9vw; }
   .distributors .orange-text {
     line-height: 4vw;
-    font-size: 5.2vw; }
+    font-size: 5.2vw;
+    text-align: left; }
   .distributors .smaller {
     font-size: 3vw; }
   .distributors .details > div {
@@ -8173,7 +8266,47 @@ a:hover {
 
   .suppl-photo .photo-desc p {
     padding: 2.4vw 4.2vw 0;
-    line-height: 3.6vw; } }
+    line-height: 3.6vw; }
+
+  .technology .list {
+    padding-left: 0; }
+  .technology .orange-text {
+    font-size: 3.5vw;
+    line-height: 3.7vw;
+    margin: 3vw 0; }
+  .technology .production .header-orange-bg {
+    max-width: 80%; }
+  .technology .yarrowia-lipotica .header-orange-bg {
+    max-width: 90%; }
+  .technology .esters .header-orange-bg {
+    width: 80%; }
+  .technology .prizes .logos {
+    margin-top: 8vw; }
+  .technology .prizes .inno {
+    width: 45vw; }
+  .technology .prizes .pl-prod {
+    width: 12vw; }
+  .technology .production-header {
+    font-size: 4vw; }
+
+  .contact-tab .details .skotan-logo {
+    width: 30vw !important;
+    margin-bottom: 3vw; }
+  .contact-tab .details p {
+    margin: 2vw;
+    text-align: center; }
+  .contact-tab .details .orange-text, .contact-tab .details .bold {
+    font-size: 3.5vw !important;
+    line-height: 3.5vw !important; }
+  .contact-tab .details .main-text {
+    font-size: 3.5vw !important;
+    line-height: 4.5vw !important; }
+  .contact-tab .col-border {
+    border: none; }
+  .contact-tab .form .main-text {
+    font-size: 4.3vw;
+    padding: 0 10vw;
+    line-height: 5.5vw; } }
 @media (min-width: 1600px) {
   .main-navbar .nav-item {
     font-size: 0.9vw; }
@@ -8227,7 +8360,15 @@ a:hover {
       max-width: 85%; }
 
   .effects .header-orange-bg {
-    font-size: 1.4vw; } }
+    font-size: 1.4vw; }
+
+  .technology .orange-text {
+    font-size: 1.2vw;
+    line-height: 1.5vw; }
+
+  .contact-tab .details .bold, .contact-tab .details .orange-text {
+    font-size: 1vw;
+    line-height: 1.2vw; } }
 @media (max-width: 767.98px) {
   .main-text {
     font-size: 3vw;
@@ -8243,7 +8384,22 @@ a:hover {
 
   .suppl_effects ul {
     font-size: 2vw;
-    line-height: 3.5vw; } }
+    line-height: 3.5vw; }
+
+  .technology .orange-text {
+    font-size: 3.5vw;
+    line-height: 3.7vw; }
+
+  .contact-tab .details .main-text {
+    font-size: 2vw;
+    line-height: 2.5vw; }
+  .contact-tab .details .skotan-logo {
+    width: 17vw; }
+  .contact-tab .details .orange-text, .contact-tab .details .bold {
+    font-size: 2.3vw;
+    line-height: 2.5vw; }
+  .contact-tab .details .skotan-logo {
+    padding: 4vw 0 0 0vw; } }
 @media (min-width: 2000px) {
   .container {
     max-width: 70vw; } }

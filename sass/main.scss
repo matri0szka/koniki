@@ -68,7 +68,7 @@ a:hover {
 }
 
 .orange-line {
-    border: 1.5px solid $orange-lighter;
+    border: 1px solid $orange-lighter;
     margin-top: 1.4vw;
 }
 
@@ -1173,8 +1173,8 @@ a:hover {
     }
     .orange-text {
         text-align: justify;
-        font-size: 1.2vw;
-        line-height: 1.5vw;
+        font-size: 1.6vw;
+        line-height: 1.7vw;
         margin: 1vw 0;
     }
     .text {
@@ -1210,17 +1210,10 @@ a:hover {
         }
     }
     .list {
-        list-style: none;
+        color: $orange-lighter;
+        font-size: 2vw;
         .main-text {
-            padding-left: 2.9vw;
-            margin-top: -0.3vw;
-        }
-        li::before {
-            content: "\002022"; 
-            font-size: 3vw;
-            padding: 1vw;
-            color: $orange-lighter;
-            vertical-align: sub;
+            color: black;
         }
     }
     
@@ -1229,11 +1222,7 @@ a:hover {
             font-size: 2.2vw;
             margin: 4vw auto 0vw;
         }
-        .list {
-            .main-text {
-                margin-top: -2.5vw;
-            }
-        }
+
         .logos {
             margin-left: 4vw;
             margin-top: 2vw;
@@ -1256,6 +1245,99 @@ a:hover {
             
         }
         
+    }
+}
+
+.contact-tab {
+    .details {
+        margin: 3vw 0;
+        .skotan-logo {
+            margin: 1vw 0 0 -2vw;
+        }
+        p {
+            margin: 0;
+            padding-left: 1vw;
+            text-align: left;
+        }
+        .bold, .orange-text {
+            font-size: 1.7vw;
+            line-height: 2vw;
+        }
+    }
+    .col-border {
+        border-left: 2px solid $orange-lighter;
+    }
+    
+    .details-1 {
+        padding: 3vw 6vw;
+        .contact-icon {
+            width: 3vw;
+            height: 100%;
+        }
+        p {
+            padding-left: 1vw;
+            line-height: 1.9vw;
+            font-size: 1.5vw;
+            .orange-text  {
+                font-size: 2vw;
+            }
+        }
+    }
+    .form {
+        .main-text {
+            font-size: 1.3vw;
+        }
+        padding: 1vw 3vw;
+        margin-top: 3vw;
+        font-style: italic;
+        .form-check-label {
+            margin-bottom: 0;
+            font-family: MyriadPro-Light;
+        }
+        .send {
+            margin-top: 3vw;
+            .send-text {
+                font-style: normal;
+                left: 2.4vw;   
+            }
+        }
+
+    }
+}
+
+.product {
+    .main-info {
+        .product-img {
+            width: 60%;
+            float: right;
+        }
+        .orange-text {
+            margin-top: 4vw;
+        }
+        .see-more {
+            margin-top: 2vw;
+            position: relative;
+            width: 15vw;
+            img {
+                position: absolute;
+                width: 100%;
+            }
+            .see-more-text {
+                position: relative;
+                font-size: 1.2vw;
+                top: 0.6vw;
+                left: 3.2vw;
+            }
+        }
+    }
+    .inside-navigation {
+        margin: 5vw auto;
+        width: 40%;
+        .main-navbar {
+            .nav-item {
+                width: 33%;
+            }
+        }        
     }
 }
 // BREAKPOINTS
